@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <Button
+        android:id="@+id/btn_linearlayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="LinearLayoutManager" />
+
+    <Button
+        android:id="@+id/btn_gridlayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="GridLayoutManager" />
+
+    <Button
+        android:id="@+id/btn_staggeredgrid"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="StaggeredGridLayoutManager" />
+
+    <Button
+        android:id="@+id/btn_headfoot"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="有头部跟底部的RecyclerView" />
+</LinearLayout>
