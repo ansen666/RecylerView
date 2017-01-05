@@ -1,5 +1,7 @@
 # RecylerView
 
+实现过程请阅读博客:http://blog.csdn.net/lowprofile_coding/article/details/54098101
+
 ### RecylerView基本使用
 ![RecylerView基本使用](https://github.com/ansen666/images/blob/master/RecylerView/RecylerView%E5%9F%BA%E6%9C%AC%E4%BD%BF%E7%94%A8.png)
 
