@@ -1,15 +1,12 @@
 package com.ansen.recyclerview;
 
 import android.os.Bundle;
-import android.os.PersistableBundle;
-import android.support.v7.app.AppCompatActivity;
-import android.support.v7.widget.LinearLayoutManager;
-import android.support.v7.widget.RecyclerView;
-import android.view.LayoutInflater;
-import android.view.View;
+
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
 
 import com.ansen.adapter.RecyclerViewAdapter;
-import com.ansen.util.DividerGridItemDecoration;
 import com.ansen.util.DividerItemDecoration;
 
 import java.util.ArrayList;
@@ -31,7 +28,7 @@ public class LinearLayoutActivity extends AppCompatActivity {
 
         initData();
 
-        recyclerView= (RecyclerView) findViewById(R.id.recyclerview);
+        recyclerView= findViewById(R.id.recyclerview);
         recyclerView.setLayoutManager(new LinearLayoutManager(this));//设置布局管理器
         recyclerView.addItemDecoration(new DividerItemDecoration(this));//添加分割线
         recyclerView.setAdapter(adapter=new RecyclerViewAdapter(this,datas));

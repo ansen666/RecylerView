@@ -1,17 +1,13 @@
 package com.ansen.recyclerview;
 
 import android.os.Bundle;
-import android.support.v7.app.AppCompatActivity;
-import android.support.v7.widget.DefaultItemAnimator;
-import android.support.v7.widget.LinearLayoutManager;
-import android.support.v7.widget.RecyclerView;
-import android.support.v7.widget.StaggeredGridLayoutManager;
 
-import com.ansen.adapter.RecyclerViewAdapter;
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.recyclerview.widget.RecyclerView;
+import androidx.recyclerview.widget.StaggeredGridLayoutManager;
+
 import com.ansen.adapter.StaggeredGridAdapter;
 import com.ansen.entity.ItemData;
-import com.ansen.util.DividerGridItemDecoration;
-import com.ansen.util.DividerItemDecoration;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -33,7 +29,7 @@ public class StaggeredGridActivity extends AppCompatActivity {
 
         initData();
 
-        recyclerView= (RecyclerView) findViewById(R.id.recyclerview);
+        recyclerView= findViewById(R.id.recyclerview);
         recyclerView.setLayoutManager(new StaggeredGridLayoutManager(3,StaggeredGridLayoutManager.VERTICAL));
         recyclerView.setAdapter(adapter=new StaggeredGridAdapter(this,datas));
     }

@@ -1,14 +1,13 @@
 package com.ansen.recyclerview;
 
 import android.os.Bundle;
-import android.support.v7.app.AppCompatActivity;
-import android.support.v7.widget.GridLayoutManager;
-import android.support.v7.widget.LinearLayoutManager;
-import android.support.v7.widget.RecyclerView;
+
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.recyclerview.widget.GridLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
 
 import com.ansen.adapter.RecyclerViewAdapter;
 import com.ansen.util.DividerGridItemDecoration;
-import com.ansen.util.DividerItemDecoration;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -29,7 +28,7 @@ public class GridLayoutActivity extends AppCompatActivity {
 
         initData();
 
-        recyclerView= (RecyclerView) findViewById(R.id.recyclerview);
+        recyclerView= findViewById(R.id.recyclerview);
         //横向显示两列
         recyclerView.setLayoutManager(new GridLayoutManager(this,2));
         //纵向显示4列
